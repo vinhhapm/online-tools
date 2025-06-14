@@ -1,0 +1,7 @@
+{
+  "build": {
+    "baseDirectory": ".",
+    "command": null,
+    "publicPath": "/"
+  }
+}
