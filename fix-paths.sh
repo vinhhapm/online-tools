@@ -15,5 +15,8 @@ find . -type f -name "*.html" -exec sed -i '' 's|content="https://emn178.github.
 find . -type f -name "*.html" -exec sed -i '' 's|<script src="js/|<script src="/js/|g' {} +
 find . -type f -name "*.html" -exec sed -i '' 's|<link rel="stylesheet" href="css/|<link rel="stylesheet" href="/css/|g' {} +
 
+# Update contact URL
+find . -type f -name "*.html" -exec sed -i '' 's|href="https://github.com/emn178/online-tools/issues">Contact</a>|href="mailto:vinhha.orb@gmail.com">Contact</a>|g' {} +
+
 # Remove any double slashes in paths (except for http://)
 find . -type f -name "*.html" -exec sed -i '' 's|([^:])//|\\1/|g' {} +
